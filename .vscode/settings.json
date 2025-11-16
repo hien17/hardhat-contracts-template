@@ -20,16 +20,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.diagnosticLevel": "Hint",
-  "cSpell.words": [
-    "commitlint",
-    "Coverflow",
-    "fullscreen",
-    "plusplus",
-    "swiper",
-    "tailwindcss"
-  ],
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  }
+  "prettier.documentSelectors": ["**/*.sol"],
+  "solidity.formatter": "prettier",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

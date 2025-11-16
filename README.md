@@ -32,7 +32,7 @@ A robust template for developing and deploying Smart Contracts on EVM-compatible
 ```bash
    npm install
    # or
-   yarn install
+   yarn
 ```
 
 ## Project Structure
@@ -63,12 +63,24 @@ A robust template for developing and deploying Smart Contracts on EVM-compatible
 npx hardhat compile
 ```
 
+or using yarn for shorter command
+
+```bash
+yarn compile
+```
+
 ## Testing
 
 Write your tests in the `test/` directory and run:
 
 ```bash
    npx hardhat test
+```
+
+or
+
+```bash
+yarn test
 ```
 
 ## Deployment
@@ -86,8 +98,7 @@ Write your tests in the `test/` directory and run:
 After i configure the network in hardhat.config.ts and add the private key & configured network's api key in .env, i can run the specificSample.ts to deploy the contract and verify the contract
 
 ```bash
-npx hardhat run scripts/specificSample.ts --net
-work berachainTestnet
+npx hardhat run scripts/specificSample.ts --network berachainTestnet
 ```
 
 And the output will be like this:
@@ -128,6 +139,15 @@ Token: 0xf1B3B0fB7f9b3Fa044885fbb8e0CA982902909E4
 
 ```bash
 npx hardhat run scripts/sample/BatchSender.ts --network bscTestnet
+```
+
+Deployed contract address:
+
+```shell
+BSC:
+0x1FF7190FE57c71465BdBEc21444c812779d3bF87
+Arbitrum:
+0x988aBB31f831D6B4C011d5A25B5359397A463422
 ```
 
 ### (Will be updated)

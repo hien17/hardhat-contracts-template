@@ -1,10 +1,9 @@
 require("dotenv").config();
-import "@nomiclabs/hardhat-waffle";
+import "@nomiclabs/hardhat-ethers";
 import "solidity-coverage";
 import "@nomicfoundation/hardhat-verify";
 
 export default {
-  defaultNetwork: "berachainTestnet",
   networks: {
     ethMainnet: {
       url: "https://ethereum-rpc.publicnode.com",
